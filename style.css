@@ -25,12 +25,18 @@ h1 {
 	line-height: 9rem;
 	padding-top: 2rem;
 	font-size: 4rem;
+
+	font-weight: 480;
+}
+
+h2 {
+	font-weight: 500;
 }
 
 main {
 	padding: 1rem 2rem;
 	flex-grow: 2;
-	background-color: hsl(0 0% 85%);
+	background-color: hsl(0 0% 94%);
 }
 
 p {
