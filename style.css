@@ -19,12 +19,11 @@ body {
 }
 
 #name {
-	
 	background-color: black;
 	color: white;
 	
 	height: 100%;
-	max-width: 3em;
+	max-width: 2.5em;
 	flex-grow: 10;
 	font-size: min(10vh, 4rem);
 
