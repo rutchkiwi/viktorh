@@ -18,20 +18,28 @@ body {
 	margin: 0;
 }
 
-h1 {
-	writing-mode: vertical-rl;
-	text-orientation: sideways-right;
+#name {
 	
 	background-color: black;
 	color: white;
 	
-	margin: 0;
-	
 	height: 100%;
-	padding: 2rem 2.5rem;
-	font-size: 4rem;
+	max-width: 9rem;
+	flex-grow: 10;
+	font-size: min(10vh, 4rem);
 
+	writing-mode: vertical-rl;
+	text-orientation: sideways-right;
+  display: flex;
+
+}
+
+h1 {
+	height: 100%;
+	font-size: 1em;
 	font-weight: 480;
+	margin: 0 auto;
+	padding: 2rem 0.5rem;
 }
 
 h2 {
@@ -40,12 +48,14 @@ h2 {
 
 main {
 	padding: 1rem 2rem;
-	flex-grow: 2;
+	flex-grow: 1; 
 	background-color: hsl(0 0% 94%);
+  flex-basis: min-content;
+	overflow: scroll;
 }
 
-p {
-	 grid-area: main;
+a {
+	margin-right: 0.25em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,9 +64,9 @@ p {
 		color: hsl(0, 0%, 84%);
 	}
 	
-	h1 {
+	#name {
     	background-color: hsl(0 0% 96%);
-		color: black;
+		  color: black;
 	}
 	
 	a {
