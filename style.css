@@ -53,7 +53,8 @@ main {
 	flex-grow: 1;
 	flex-basis: min-content;
 	overflow: scroll;
-	background-image: url("./bg.svg");
+	/* SET IN JS NOW */
+	/* background-image: url("./bg.svg"); */
 	/*! background-color: hsl(0 0% 90%); */
 	background-repeat: repeat;
 	font-weight: 470;
