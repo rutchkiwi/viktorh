@@ -2,7 +2,7 @@
 
 /* latin */
 
-@font-face {
+/* @font-face {
 	font-family: 'Inter var';
 	font-style: normal;
 	font-weight: 100 900;
@@ -10,10 +10,17 @@
 	src: url('./Inter-roman.latin.var.woff2') format('woff2');
 	unicode-range: U+0000-007F, U+00A0-0100, U+0131, U+0152-0154, U+02BB-02BD, U+02C6, U+02DA, U+02DC, U+2000-200C, U+2010-2028, U+202F-2060, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+FEFF;
 	font-named-instance: 'Regular';
+} */
+
+@font-face {
+	font-family: 'saira';
+	src: url('./Saira-VariableFont_wdth,wght.ttf');
+	font-display: swap;
 }
 
 html {
-	font-family: 'Inter var', -apple-system, sans-serif;
+	font-family: 'saira', -apple-system, sans-serif;
+	font-weight: 400;
 }
 
 body {
@@ -38,13 +45,15 @@ body {
 h1 {
 	height: 100%;
 	font-size: 1em;
-	font-weight: 480;
+	font-weight: 200;
 	margin: 0 auto;
 	padding: 2rem 0.5rem;
+	font-stretch: 125%;
+	letter-spacing: 0.021em;
 }
 
 h2 {
-	font-weight: 500;
+	font-weight: 300;
 	margin-top: 0;
 	margin-bottom: 1.5rem;
 }
@@ -55,7 +64,6 @@ main {
 	flex-basis: min-content;
 	overflow: scroll;
 	/* SET IN JS NOW */
-	/* background-image: url("./bg.svg"); */
 	background-repeat: repeat;
 	background-blend-mode: luminosity;
 	background-color: hsl(216, 100%, 97.1%);
@@ -64,7 +72,7 @@ main {
 main > * {
 	background-color: white;
 	display: inline-block;
-	padding: 6px;
+	padding: 3px 6px;
 }
 
 main > p:first-of-type {
