@@ -35,7 +35,7 @@ body {
 	height: 100%;
 	max-width: 2.5em;
 	flex-grow: 10;
-	font-size: min(9vh, 4rem);
+	font-size: min(9vh, 65px);
 	writing-mode: vertical-rl;
 	text-orientation: sideways-right;
 	display: flex;
@@ -44,7 +44,7 @@ body {
 
 h1 {
 	height: 100%;
-	font-size: 1em;
+	font-size: 9vh;
 	font-weight: 200;
 	margin: 0 auto;
 	padding: 2rem 0.5rem;
