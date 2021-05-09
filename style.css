@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'saira';
+	font-family: 'thefont';
 	src: url('./JetBrainsMono[wght].ttf');
 	font-display: swap;
 }
@@ -8,7 +8,7 @@ html {
 	height: 100%;
 	
 	font-family: monospace;
-	font-family: 'saira', -apple-system, sans-serif;
+	font-family: 'thefont', -apple-system, sans-serif;
 	font-weight: 400;
 }
 
@@ -38,6 +38,19 @@ body {
 
 a {
 	margin-right: 0.25em;
+}
+
+a:hover {
+	background-color: hsla(0,0%, 0%, 0.6);
+	color: lightblue;
+}
+
+a:visited:hover {
+	color: hsl(275, 100%, 86%);
+}
+
+a:active{
+	background-color: black;
 }
 
 /* @media (fprefers-color-scheme: dark) {
