@@ -1,101 +1,49 @@
-
-
-/* latin */
-
-/* @font-face {
-	font-family: 'Inter var';
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url('./Inter-roman.latin.var.woff2') format('woff2');
-	unicode-range: U+0000-007F, U+00A0-0100, U+0131, U+0152-0154, U+02BB-02BD, U+02C6, U+02DA, U+02DC, U+2000-200C, U+2010-2028, U+202F-2060, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+FEFF;
-	font-named-instance: 'Regular';
-} */
-
 @font-face {
 	font-family: 'saira';
-	src: url('./Saira-VariableFont_wdth,wght.ttf');
+	src: url('./JetBrainsMono[wght].ttf');
 	font-display: swap;
 }
 
 html {
+	height: 100%;
+	
+	font-family: monospace;
 	font-family: 'saira', -apple-system, sans-serif;
 	font-weight: 400;
 }
 
-body {
-	display: flex;
-	flex-direction: row-reverse;
-	margin: 0;
-}
-
-#name {
-	/* 	background-color: hsla(0, 0%, 6%, 1); */
-	color: white;
-	height: 100%;
-	max-width: 2.5em;
-	flex-grow: 10;
-	font-size: min(9vh, 65px);
-	writing-mode: vertical-rl;
-	text-orientation: sideways-right;
-	display: flex;
-	background-color: hsl(0, 0%, 5%);
-}
-
 h1 {
-	height: 100%;
-	font-size: 7vh;
-	font-weight: 200;
-	margin: 0 auto;
-	padding: 2rem 0.5rem;
-	font-stretch: 125%;
-	letter-spacing: 0.021em;
+	margin: 0;
+	margin-bottom: 2rem;
+	padding: 0.5rem 1rem;
+	font-size: 3rem;
+	background-color: hsla(0,0%, 0%, 0.6);
+	color: white;
+	font-weight: 254;
+	letter-spacing: 0.037em;
 }
 
 h2 {
-	font-weight: 300;
-	margin-top: 0;
-	margin-bottom: 1.5rem;
+	font-weight: 550;
+	text-transform: uppercase;
 }
 
-main {
+body {
 	padding: 2rem 2rem;
-	flex-grow: 1;
-	flex-basis: min-content;
-	overflow: scroll;
 	/* SET IN JS NOW */
 	background-repeat: repeat;
-	background-blend-mode: luminosity;
-	background-color: hsl(216, 100%, 97.1%);
-}
-
-main > * {
-	background-color: white;
-	display: inline-block;
-	padding: 3px 6px;
-}
-
-main > p:first-of-type {
-	margin-top: 0;
+	background-blend-mode: difference;
+	background-color: hsla(216, 100%, 97.1%);
 }
 
 a {
 	margin-right: 0.25em;
 }
 
-@media (prefers-color-scheme: dark) {
-	main {
+/* @media (fprefers-color-scheme: dark) {
+	body {
 		background-color: hsl(0, 0%, 7%);
 		color: hsl(0, 0%, 84%);
-	}
-	
-	main > * {
-  	background-color: black;
-	}
-	
-	#name {
-		background-color: hsl(0 0% 96%);
-		color: black;
 	}
 	a {
 		color: lightblue;
@@ -105,3 +53,4 @@ a {
 	}
 }
 
+ */
