@@ -1,0 +1,1 @@
+scp * raspberry:viktorh
