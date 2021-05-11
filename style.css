@@ -23,8 +23,12 @@ h1 {
 	letter-spacing: 0.037em;
 }
 
+main {
+	padding-left: 1rem;
+}
+
 h2 {
-	font-weight: 550;
+	font-weight: 500;
 	text-transform: uppercase;
 }
 
