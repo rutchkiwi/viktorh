@@ -1,1 +1,1 @@
-scp -r * raspberry:viktorh
+rsync -rv --update * raspberry:viktorh
