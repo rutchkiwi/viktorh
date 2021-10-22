@@ -1,1 +1,1 @@
-scp * raspberry:viktorh
+scp -r * raspberry:viktorh
