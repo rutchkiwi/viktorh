@@ -35,6 +35,13 @@ h1 {
 	color: white;
 	font-weight: 254;
 	letter-spacing: 0.08em;
+	hyphens: none;
+}
+
+@media (max-width: 460px) {
+	h1 {
+		hyphens: manual;
+	}
 }
 
 main {
