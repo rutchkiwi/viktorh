@@ -83,13 +83,6 @@ canvas {
   	height: 70vmin;
 }
 
-@media (max-width: 460px) {
-	canvas {
-		width: 100vmax;
-		height: 100vmax;
-	}
-}
-
 :root {
 	--line-color: #000000;
 }	
