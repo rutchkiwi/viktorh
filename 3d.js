@@ -22,6 +22,10 @@ const geometry = new THREE.DodecahedronGeometry(12);
 const material = new THREE.MeshBasicMaterial({wireframe: true});
 const shape = new THREE.Mesh(geometry, material);
 
+shape.rotation.x = Math.random();
+shape.rotation.y = Math.random();
+shape.rotation.z = Math.random();
+
 scene.add(shape);
 
 const speed = 0.4;
