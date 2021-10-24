@@ -73,6 +73,16 @@ a:active{
 	background-color: black;
 }
 
+
+canvas {
+	position: fixed;
+	bottom: 3vmin;
+	right: 1vmin;
+	/* border: 1px solid; */
+	width: 70vmin;
+  	height: 70vmin;
+}
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: hsl(0, 0%, 7%);
