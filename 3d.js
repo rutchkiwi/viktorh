@@ -26,9 +26,10 @@ scene.add(shape);
 
 function animate(){
 	requestAnimationFrame(animate);
-	shape.rotation.x += 0.002;
-	shape.rotation.y += 0.0005;
-	shape.rotation.z += 0.001;
+	const speed = 1;
+	shape.rotation.x += speed * 0.0008;
+	shape.rotation.y += speed * 0.0007;
+	shape.rotation.z -= speed * 0.0011;
 
 	const color = new THREE.Color(
 		getComputedStyle(document.body).getPropertyValue('--line-color'));
