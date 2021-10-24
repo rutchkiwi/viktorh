@@ -90,12 +90,13 @@ canvas {
 }
 
 :root {
-	--line-color: #000000;
+	/* No space allowed or Chrome gets mad and includes a space */
+	--line-color:#000000;
 }	
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--line-color: #ffffff;
+		--line-color:#ffffff;
 	}
 
 	body {
