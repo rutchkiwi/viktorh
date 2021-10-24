@@ -83,10 +83,9 @@ canvas {
   	height: 70vmin;
 }
 
-@media (max-width: 460px) {
+@media (max-height: 600px) {
 	canvas {
-		width: 100vmax;
-		height: 100vmax;
+		display: none;
 	}
 }
 
