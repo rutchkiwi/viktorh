@@ -18,18 +18,18 @@ camera.position.setZ(30);
 
 renderer.render(scene, camera);
 
-const geometry = new THREE.DodecahedronGeometry(12)
+const geometry = new THREE.DodecahedronGeometry(12);
 const material = new THREE.MeshBasicMaterial({color: 0x333333, wireframe: true});
-const torus = new THREE.Mesh(geometry, material);
+const shape = new THREE.Mesh(geometry, material);
 
-scene.add(torus);
+scene.add(shape);
 
 function animate(){
 	requestAnimationFrame(animate);
-	torus.rotation.x += 0.002;
-	torus.rotation.y += 0.0005;
-	torus.rotation.z += 0.001;
-renderer.render(scene, camera);
+	shape.rotation.x += 0.002;
+	shape.rotation.y += 0.0005;
+	shape.rotation.z += 0.001;
+	renderer.render(scene, camera);
 }
 
 animate();
