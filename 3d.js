@@ -26,7 +26,7 @@ scene.add(shape);
 
 function animate(){
 	requestAnimationFrame(animate);
-	const speed = 1;
+	const speed = 0.4;
 	shape.rotation.x += speed * 0.0008;
 	shape.rotation.y += speed * 0.0007;
 	shape.rotation.z -= speed * 0.0011;
