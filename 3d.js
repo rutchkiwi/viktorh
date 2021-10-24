@@ -12,14 +12,14 @@ const renderer = new THREE.WebGLRenderer({
 	alpha: true
 })
 
-renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setPixelRatio(1);
 renderer.setSize(renderer.domElement.clientWidth,renderer.domElement.clientHeight);
 camera.position.setZ(30);
 
 renderer.render(scene, camera);
 
 const geometry = new THREE.DodecahedronGeometry(12);
-const material = new THREE.MeshBasicMaterial({color: 0x333333, wireframe: true});
+const material = new THREE.MeshBasicMaterial({wireframe: true});
 const shape = new THREE.Mesh(geometry, material);
 
 scene.add(shape);
@@ -29,6 +29,12 @@ function animate(){
 	shape.rotation.x += 0.002;
 	shape.rotation.y += 0.0005;
 	shape.rotation.z += 0.001;
+
+	const color = new THREE.Color(
+		getComputedStyle(document.body).getPropertyValue('--line-color'));
+
+	material.color = color;
+
 	renderer.render(scene, camera);
 }
 
