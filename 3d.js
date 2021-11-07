@@ -1,7 +1,7 @@
 
 // Find the latest version by visiting https://cdn.skypack.dev/three.
 
-import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.133.1-a8rkd0QTHl2tMZXZJAEw/mode=imports,min/optimized/three.js';
+import * as THREE from './three.js';
 
 const scene = new THREE.Scene();
 
