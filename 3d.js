@@ -1,6 +1,3 @@
-
-// Find the latest version by visiting https://cdn.skypack.dev/three.
-
 import * as THREE from './three.js';
 
 const scene = new THREE.Scene();
