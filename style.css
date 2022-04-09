@@ -60,12 +60,12 @@ a {
 	margin-right: 0.25em;
 }
 
-a:hover {
+a:hover,a:focus {
 	background-color: hsla(0,0%, 0%, 0.6);
 	color: lightblue;
 }
 
-a:visited:hover {
+a:visited:hover,a:visited:focus {
 	color: hsl(275, 100%, 86%);
 }
 
