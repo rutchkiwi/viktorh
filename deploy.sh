@@ -1,1 +1,1 @@
-rsync -rv --update * raspberrypi.local:viktorh
+rsync -rv --update * raspberry:viktorh
